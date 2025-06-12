@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Vehicle Rental System
 
 Overview
@@ -114,3 +115,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 Contributing
 
 Feedback and suggestions are welcome! Please open an issue or submit a pull request.
+=======
+# vehicle-rental-system
+A Java-based console application for managing a vehicle rental business with a focus on encapsulation.
+>>>>>>> b2a723686b49df3768ce244847d3d35a98530a8c
