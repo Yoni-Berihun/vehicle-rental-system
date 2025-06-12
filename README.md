@@ -1,121 +1,120 @@
-<<<<<<< HEAD
-Vehicle Rental System
+# 🚗 YO VEHICLE RENTAL SYSTEM
+
+Welcome to **YO Vehicle Rental System** – a Java-based console application for managing vehicle rentals, customers, locations, and contracts with ease!
 
-Overview
+---
 
-A console-based Java application designed to manage a vehicle rental business. It allows users to register customers, add vehicles and locations, create rental contracts, calculate costs, and process vehicle returns.
+## ✨ Features
 
-Features
+- 📍 **Location Management**: Add and list rental locations with address and capacity.
+- 🚙 **Vehicle Management**: Add vehicles to locations, track their status, and list available vehicles.
+- 👤 **Customer Management**: Register customers with driver license and payment methods.
+- 📄 **Rental Contracts**: Create, list, and manage rental contracts, including insurance options and payment processing.
+- 🔄 **Vehicle Returns**: Return vehicles and update contract status.
+- 📊 **Cost Breakdown**: See detailed rental and insurance costs.
+- 🖥️ **User-Friendly Console UI**: Simple, menu-driven interface.
 
+---
 
+## 🧑‍💻 Object-Oriented Programming (OOP) Principles
 
+This project is designed to demonstrate core OOP concepts in Java:
 
+- **Encapsulation**:  
+  All data fields are private and accessed via getters/setters, ensuring data integrity and hiding internal implementation details.
 
-Register customers and manage payment methods.
+- **Abstraction**:  
+  The system exposes high-level operations (like creating contracts or registering customers) through clear, well-defined methods.
 
+- **Inheritance**:  
+  The structure is ready for future extension, such as creating specialized vehicle types (e.g., `Car`, `Truck`, `Van`) that inherit from a base `Vehicle` class.
 
+- **Polymorphism**:  
+  Methods like `toString()` are overridden for custom output, and the design allows for future use of interfaces (e.g., a `Rentable` interface).
 
-Add rental locations and vehicles with details (e.g., make, model, price).
+---
 
+## 🛠️ Getting Started
 
+### **Prerequisites**
+- Java 17+ (or compatible version)
+- Git (for cloning the repo)
 
-Create rental contracts with customizable rental periods and insurance options.
+### **Clone the Repository**
+```sh
+git clone https://github.com/<your-username>/vehicle-rental-system.git
+cd vehicle-rental-system/code
+```
 
+### **Compile the Project**
+```sh
+javac -d . enums/*.java *.java
+```
 
+### **Run the Application**
+```sh
+java -cp . vehicle_rental_system.code.Main
+```
 
-Return vehicles and update contract statuses using RentalStatus enum.
+---
 
+## 📸 Demo
 
+```
+=======================================
+   🚗  YO VEHICLE RENTAL SYSTEM  🚗   
+=======================================
++-----------------------------------------+
+|     Vehicle Rental System - Main Menu   |
++-----------------------------------------+
+| 1. Add Location                         |
+| 2. Add Vehicle to Location              |
+| 3. Register Customer                    |
+| 4. List Locations                       |
+| 5. List Available Vehicles by Location  |
+| 6. List Customers                       |
+| 7. Create Rental Contract               |
+| 8. Return Vehicle                       |
+| 9. List Rental Contracts                |
+| 10. Exit                                |
++-----------------------------------------+
+   Enter your choice: 
+```
 
-Display lists of customers, locations, vehicles, and contracts.
+---
 
-How to Run
+## 📦 Project Structure
 
+```
+vehicle_rental_system/
+│
+├─ code/
+│   ├─ enums/                # Enum types (FuelType, PaymentMethod, etc.)
+│   ├─ Main.java             # Entry point
+│   ├─ VehicleRentalSystem.java
+│   ├─ ...                   # Other classes (Customer, Vehicle, etc.)
+│
+└─ README.md
+```
 
+---
 
+## 🤝 Contributing
 
+Pull requests are welcome! For major changes, please open an issue first to discuss what you would like to change.
 
-Prerequisites: Ensure you have Java 8 or later installed. Check with java -version.
+---
 
+## 📄 License
 
+This project is open source and available under the [MIT License](LICENSE).
 
-Clone the Repository:
+---
 
-git clone https://github.com/Yoni-Berihun/vehicle-rental-system.git
-cd vehicle-rental-system
+## 💡 Author
 
+[Yoni Berihun](https://github.com/Yoni-Berihun)
 
+---
 
-Compile the Code:
-
-javac -d . src/vehicle_rental_system/code/*.java
-
-
-
-Run the Program:
-
-java vehicle_rental_system.code.Main
-
-
-
-Follow the on-screen menu to interact with the system (e.g., select option 7 to create a rental contract).
-
-OOP Principles
-
-
-
-
-
-Encapsulation: Implemented with private fields (e.g., contractId in RentalContract) and getters to ensure data safety.
-
-
-
-Abstraction: Basic use in methods like createRentalContract; future plans include a RentalManager class.
-
-
-
-Inheritance: Not used yet; potential for a Vehicle hierarchy (e.g., Car, Van).
-
-
-
-Polymorphism: Minimal use (e.g., toString); future plans include a Rentable interface.
-
-Limitations
-
-
-
-
-
-Data is not persisted (lost when the program exits).
-
-
-
-Console-based interface with no graphical user interface.
-
-Future Improvements
-
-
-
-
-
-Add database support for data persistence.
-
-
-
-Implement a GUI using JavaFX.
-
-
-
-Include late fee calculations and vehicle maintenance tracking.
-
-License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-Contributing
-
-Feedback and suggestions are welcome! Please open an issue or submit a pull request.
-=======
-# vehicle-rental-system
-A Java-based console application for managing a vehicle rental business with a focus on encapsulation.
->>>>>>> b2a723686b49df3768ce244847d3d35a98530a8c
+> _“Drive your ideas forward with code!”_cls
